@@ -5,6 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <script src="./app.ts" type="module"></script>
+        <style>
+            :root {
+                background-color: white;
+            }
+            body {
+                display: flex;
+            }
+            #root {
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                height: 100vh;
+                flex-direction: column;
+            }
+            canvas {
+                margin-top: auto;
+                margin-bottom: auto;
+                border: 1px solid rgba(0, 0, 0, 0.5);
+            }
+        </style>
     </head>
     <body>
         <div id="root"></div>
