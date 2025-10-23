@@ -22,8 +22,8 @@ const update = (thing: Thing): Thing => {
     vt *= -1;
   }
   let theta = thing.theta + vt;
-  let x = thing.x + Math.sin(theta) * 0.00001;
-  let y = thing.y + Math.cos(theta) * 0.00001;
+  let x = thing.x + Math.sin(theta) * 0.0001;
+  let y = thing.y + Math.cos(theta) * 0.0001;
   return { vt, x, y, theta };
 };
 const newThing = (): Thing => ({
@@ -44,7 +44,7 @@ const image = new Image();
 image.crossOrigin = "anonymous";
 image.src = //"https://media.istockphoto.com/id/182177931/photo/picture-frame-isolated-on-white.jpg?s=612x612&w=0&k=20&c=xJDz9mhFhEccRSnaYZCx6-HnP1LwIk3G6oyMW7LAF8E=";
   // "http://localhost:8000/test.jpg";
-  "https://upload.wikimedia.org/wikipedia/en/5/5a/Twenty_One_Pilots_-_Breach.png";
+  "http://localhost:8000/breach.jpg";
 
 await new Promise((resolve) => {
   image.onload = resolve;
