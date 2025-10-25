@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "bun index.html",
+    "serve": "http-server -p 8000 --cors"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
